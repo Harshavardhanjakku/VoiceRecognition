@@ -1,0 +1,57 @@
+{
+  "name": "voice",
+  "version": "0.1.0",
+  "private": true,
+"homepage": "https://GollaChitraleka.github.io/VoiceRecognition",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.2.0",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.2",
+    "lucide-react": "^0.468.0",
+    "postcss": "^8.4.49",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.0.2",
+    "react-scripts": "^5.0.1",
+    "react-speech-recognition": "^3.10.0",
+    "string-similarity": "^4.0.4",
+    "tailwindcss": "^3.4.15",
+    "web-vitals": "^2.1.4",
+    "words-to-numbers": "^1.5.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  "build": "react-scripts build && cp build/index.html build/404.html",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "tailwind.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
