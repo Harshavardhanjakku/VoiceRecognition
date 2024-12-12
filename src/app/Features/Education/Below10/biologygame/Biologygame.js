@@ -69,11 +69,19 @@ const Bioapp = () => {
     if (recognizedText === currentBodyPart.name.toLowerCase()) {
       setScore((prevScore) => prevScore + 10); // Increment score for correct answer
       setResultMessage("🎉 Correct! Moving to the next body part...");
+      speakFeedback("Correct! Moving to the next body part.");
       setTimeout(() => getRandomBodyPart(), 2000); // Automatically move to next body part after 2 seconds
     } else {
       setScore((prevScore) => Math.max(prevScore - 1, 0)); // Decrease score for incorrect answer but not below 0
       setResultMessage("❌ Incorrect! Try again.");
+      speakFeedback("Incorrect! Try again.");
     }
+  };
+
+  const speakFeedback = (message) => {
+    const speech = new SpeechSynthesisUtterance(message);
+    speech.lang = "en-US";
+    window.speechSynthesis.speak(speech);
   };
 
   return (
