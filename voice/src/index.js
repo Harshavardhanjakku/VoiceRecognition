@@ -6,6 +6,7 @@ import Fruit from "./app/Features/Education/Below10/fruit/Fruit";
 import Biologygame from "./app/Features/Education/Below10/biologygame/Biologygame";
 import Mathgame from "./app/Features/Education/Below10/mathgame/Mathgame";
 import ChefMaster from "./app/Features/Vocational/ChefMaster/ChefMaster";
+import Carpentry from "./app/Features/Vocational/Carpentry/Carpentry";
 import GamifiedCertification from "./app/Features/GamifiedCertification/GamifiedCertification";
 import Chatbot from "./app/Features/Chatbot/chatbot";
 import reportWebVitals from "./app/reportWebVitals";
@@ -122,6 +123,12 @@ function FeaturesPage() {
             ChefMaster Game
           </Link>
           <Link
+            to="/carpentry"
+            className="border border-white text-white px-6 py-2 rounded-full hover:bg-sky-600 hover:text-black transition"
+          >
+            ChefMaker Game
+          </Link>
+          <Link
             to="/all-games"
             className="border border-blue-400 text-blue-400 px-6 py-2 rounded-full hover:bg-blue-500 hover:text-white transition"
           >
@@ -184,18 +191,27 @@ function VocationalPage() {
         <p className="text-gray-300 mb-8">
           Explore vocational games like ChefMaster to enhance your practical skills.
         </p>
-        <div className="flex justify-center gap-6">
-          <div className="border border-white text-white px-8 py-6 rounded-lg hover:bg-sky-600 transition">
-            <h3 className="text-xl font-bold mb-4">ChefMaster Game</h3>
-            <Link
-              to="/chefmaster"
-              className="text-white border border-white px-4 py-2 rounded-full hover:bg-sky-700"
-            >
-              Start Game
-            </Link>
-          </div>
-        </div>
-      </div>
+        <div className="flex justify-center gap-8 mb-8">
+  <div className="border border-white text-white px-8 py-6 rounded-lg hover:bg-sky-600 transition w-full max-w-xs">
+    <h3 className="text-xl font-bold mb-4">ChefMaster Game</h3>
+    <Link
+      to="/chefmaster"
+      className="text-white border border-white px-4 py-2 rounded-full hover:bg-sky-700"
+    >
+      Start Game
+    </Link>
+  </div>
+  <div className="border border-white text-white px-8 py-6 rounded-lg hover:bg-sky-600 transition w-full max-w-xs">
+    <h3 className="text-xl font-bold mb-4">ChefMaker</h3>
+    <Link
+      to="/carpentry"
+      className="text-white border border-white px-4 py-2 rounded-full hover:bg-sky-700"
+    >
+      Start Game
+    </Link>
+  </div>
+</div>
+   </div>
     </div>
   );
 }
@@ -313,6 +329,7 @@ function App() {
         <Route path="/mathgame" element={<Mathgame />} />
         <Route path="/fruit" element={<Fruit />} />
         <Route path="/chefmaster" element={<ChefMaster />} />
+        <Route path="/carpentry" element={<Carpentry />} />
         <Route path="/vocational" element={<VocationalPage />} />
         <Route path="/chatbot" element={<Chatbot />} />
         <Route path="/game-certification" element={<GamifiedCertification />} />

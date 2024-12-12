@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 
 function Below20() {
   return (
@@ -9,3 +9,4 @@ function Below20() {
 }
 
 export default Below20;
+*/
