@@ -9,7 +9,6 @@ import ChefMaster from "./app/Features/Vocational/ChefMaster/ChefMaster";
 import Carpentry from "./app/Features/Vocational/Carpentry/Carpentry";
 import GamifiedCertification from "./app/Features/GamifiedCertification/GamifiedCertification";
 import Chatbot from "./app/Features/Chatbot/chatbot";
-import reportWebVitals from "./app/reportWebVitals";
 import Below20 from "./app/Features/Education/Below20/Below20";
 import Below30 from "./app/Features/Education/Below30/Below30";
 
@@ -297,6 +296,15 @@ function App() {
       }
       else if (transcript.toLowerCase().includes("open below 30")){
         navigate("/education/below30");
+      }
+      else if (transcript.toLowerCase().includes("open biology game")){
+        navigate("/education/below30/biologygame");
+      }
+      else if (transcript.toLowerCase().includes("open fruit game")){
+        navigate("/education/below30/fruitgame");
+      }
+      else if (transcript.toLowerCase().includes("open math game")){
+        navigate("/education/below30/mathgame");
       }
     };
 
