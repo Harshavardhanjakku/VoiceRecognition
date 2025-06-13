@@ -8,7 +8,7 @@ import Mathgame from "./app/Features/Education/Below10/mathgame/Mathgame";
 import ChefMaster from "./app/Features/Vocational/ChefMaster/ChefMaster";
 import Carpentry from "./app/Features/Vocational/Carpentry/Carpentry";
 import GamifiedCertification from "./app/Features/GamifiedCertification/GamifiedCertification";
-import Chatbot from "./app/Features/chatbot/chatbot";
+import Chatbot from './app/Features/chatbotgame/Chatbot';
 import Below20 from "./app/Features/Education/Below20/Below20";
 import Below30 from "./app/Features/Education/Below30/Below30";
 
